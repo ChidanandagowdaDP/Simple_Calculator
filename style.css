@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-  height: 70vh;
+  height: 500px;
   width: 320px;
   border: 1px solid white;
   border-radius: 0.7rem;
@@ -19,7 +19,8 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 10vmin;
+  margin-top: 150px;
+  padding: 0 6px 14px 6px;
 }
 
 .output {
@@ -33,23 +34,20 @@ body {
 
 input {
   height: 100%;
-  width: 100%;
+  width: 97%;
   background-color: #626161;
   color: white;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 00;
   text-align: right;
+  padding-right: 6px;
 }
 
 .numbers_operation {
-  height: 75%;
-  width: 90%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  flex-direction: column;
-  margin-bottom: 0.1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3px;
+  column-gap: 6px;
 }
 
 button {
@@ -64,7 +62,7 @@ button {
 }
 
 #equal {
-  height: 130px;
+  height: 60px;
   width: 60px;
   background: linear-gradient(#0affff, #294545);
 }
